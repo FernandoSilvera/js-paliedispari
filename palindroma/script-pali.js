@@ -5,12 +5,13 @@ let userWord = prompt("Inserisci una parola, il programma ti dirà se è PALINDR
 function checkPalindrome(word) {
   const splitWord = word.split("");
   const reverseSplitWord = (word.split("")).reverse();
+  const reverseWord = reverseSplitWord.join("");
   let validPalindrome = false;
 
-  console.log(splitWord);
-  console.log(reverseSplitWord);
+  console.log(word);
+  console.log(reverseWord);
   
-  if (splitWord === reverseSplitWord) {
+  if (word === reverseWord) {
     validPalindrome = true;
   } else {
     validPalindrome = false;
